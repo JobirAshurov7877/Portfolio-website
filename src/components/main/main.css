@@ -1,0 +1,133 @@
+.main{
+     width: 100%;
+     height: 100vh;   
+     color: #fff;
+     padding-top: 150px;
+}
+.main-container{
+     display: flex;
+     justify-content: space-between;
+     width: 100%;
+     height: 100%;
+     padding: 0  70px;
+}
+.main-blur{
+     position: absolute;
+     left: 30%;
+     top: -30%;
+     width: 300px;
+     height: 300px;
+     z-index: 98;
+     background: linear-gradient(180deg,#8324ff98,#5d2abf);
+     filter: blur(200px);
+     transform: matrix(0,1,1,0,0,0);
+}
+.main-textBox,
+.main-imageBox{
+     width: 50%;
+     height: 100%;
+}
+.main-textBox .main-textHeader{
+     width: 100%;
+     height: 350px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     text-align: start;
+}
+.main-textBox .main-textHeader h1{
+     font-size: 4.2rem;
+     margin: 25px 0;
+}
+.main-textBox .main-textHeader p{
+     font-size: 1.2rem;
+     color: #cccccc;
+}
+.main-imageBox img{
+     filter: drop-shadow(1px 1px 12px #842dff);
+}
+.contact{
+     color: #fff;
+     width: 100%;
+     height: 100%;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     padding: 0 30px;
+}
+.InfoBtns{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     width: 450px;
+}
+@media only screen and (max-width: 1400px) {
+     .main{
+          padding-top: 70px;
+     }
+     .main-container{
+          flex-direction: column-reverse;
+     }
+     .main-imageBox{
+          width: 100%;
+          height: auto;
+          display: flex;
+          justify-content: center;
+     }
+     .main-imageBox img{
+          width: 400px;
+     }
+
+     .main-textBox{
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: start;
+     }
+     .main-textBox .main-textHeader{
+          height: 200px; 
+          justify-content: start;
+          margin-bottom: 20px;
+     }
+     .main-textBox .main-textHeader h1{
+          font-size: 2.2rem;
+          text-align: center;
+     }
+     .main-textBox .main-textHeader p{
+          font-size: 1rem;
+          text-align: center;
+     }
+}
+@media only screen and (max-width: 600px){
+     .main-container {
+          padding: 0;
+     }
+     .InfoBtns{
+          flex-direction: column;
+          height: 130px;
+          width: 100%;
+          margin-top: 30px;
+     }
+
+}
+@media only screen and (max-width: 450px){
+     .main-imageBox img{
+          width: 300px;
+     }
+     .main-textBox .main-textHeader{
+          padding: 0 20px;
+     }
+     .main-textBox .main-textHeader h1{
+          font-size: 1.9rem;
+     }
+     .main-blur{
+          left: 40%;
+          top: 0%;
+          width: 50px;
+          height: 250px;
+          z-index: 98;
+          background: linear-gradient(180deg,#8324ff98,#5d2abf);
+          filter: blur(50px);
+     }
+}

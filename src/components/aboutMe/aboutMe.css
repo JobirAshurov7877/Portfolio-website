@@ -1,0 +1,186 @@
+.aboutMe{
+     width: 100%;
+     height: auto;
+     padding: 0  50px;
+
+}
+.about-container{
+     display: flex;
+     justify-content: space-between;
+     margin-top: 100px;
+     width: 100%;
+}
+.aboutMe .title{
+    font-size: 40px; 
+    margin-bottom: 20px;    
+}
+.aboutMe .title::after{
+     position: absolute;
+     content: '';
+     width: 195px;
+     height: 2px;
+     background-color: rgb(111, 0, 255);
+     margin-top: 55px;
+     margin-left: -190px;
+
+     
+
+}
+.profileCard{
+     padding: 45px;
+    -webkit-backdrop-filter: blur(80px);
+    backdrop-filter: blur(80px);
+    height: 500px;
+    width: 370px;
+    box-sizing: border-box;
+    -webkit-backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+    background: hsla(0,0%,100%,.08);
+    border: 2px solid hsla(0,0%,100%,.08);
+    border-radius: 20px;
+}
+.line{
+     width: 100%;
+     height: .5px;
+     background-color: #4d4e70;
+     margin: auto;
+}
+.card-header{
+     width: 160px;
+     height: 160px;
+     border: 1px solid hsla(0, 0%, 100%, 0.23);
+     border-radius: 50%;
+     display: grid;
+     place-items: center;
+}
+.card-header img{
+     width: 95%;
+     height: 95%;
+     border-radius: 50%;
+     object-fit: cover;
+}
+.card-line{
+     width: 80%;
+     height: 0.064px;
+     background-color: #36374d;
+     margin-top: 35px;
+}
+.card-body{
+     width: 100%;
+}
+.card-body .name{
+     font-size: 2.5rem;
+     margin-top: 35px;
+     font-weight: 500;
+     letter-spacing: -0.9px;
+}
+.card-body p{
+     font-size: 1.3rem;
+     margin-top: 5px;
+}
+.icons{
+     width: 100%;
+     display: flex;
+     justify-content: space-around;
+     margin-top: 55px;
+}
+.card-icon{
+     color: #ffff;
+     font-size: 1.5rem;
+}
+
+.textBox{
+     width: 750px;
+     text-align: center;
+     padding: 0 40px;
+}
+.textBox p{
+     color: #9294d3;
+     font-size: 20px;
+     line-height: 35px;
+}
+.shape{
+     position: absolute;
+     width: 180px;
+     height: 150px;
+     margin-left: 250px;
+     margin-top: 0px;
+     z-index: 98;
+     background: linear-gradient(180deg,#8b35fc98,#7e2abf);
+     filter: blur(100px);
+     transform: matrix(0,1,1,0,0,0);
+}
+@media only screen and (max-width: 1200px){
+     .about-container{
+          flex-direction: column;
+          align-items: center;
+     }
+     .about-container .textBox{
+          margin-top: 50px;
+     }
+}
+@media only screen and (max-width: 800px){
+     .aboutMe{
+          padding: 0;
+     }
+     .about-container .textBox{
+          width: 100%;
+     }
+     .textBox p{
+          font-size: 0.9rem;
+          line-height: 25px;
+     }
+}
+@media only screen and (max-width: 500px){
+     .profileCard{
+          width: 300px;
+          height: 420px;
+          padding: 30px;
+     }
+     .card-header{
+          width: 130px;
+          height: 130px;
+     }
+     .card-body .name{
+          font-size: 1.9rem;
+          margin-top: 17px;
+     }
+     .card-body p{
+          font-size: 1rem;
+     }
+     .card-line {
+          height: 1px;
+          margin-top: 17px;
+     }
+     .icons{
+          margin-top: 70px;
+     }
+     .aboutMe .title{
+          font-size: 2rem;
+          margin-bottom: 30px;
+     }
+     .aboutMe .title::after{
+          margin-left: -200px;
+     }
+     .textBox{
+          padding: 0 15px;
+     }
+     .textBox p{
+          font-size: 0.8rem;
+          line-height: 20px;
+     }
+     .shape {
+          position: absolute;
+          width: 100px;
+          height: 100px;
+          margin-left: 230px;
+          margin-top: 0px;
+          z-index: 98;
+          background: linear-gradient(180deg,#8b35fc98,#7e2abf);
+          filter: blur(55px);
+          
+      }
+}

@@ -1,0 +1,6 @@
+export {default as Main} from './main/main'
+export {default as Navbar} from './navbar/navbar'
+export {default as AboutMe} from './aboutMe/aboutMe'
+export {default as MySecvices} from './mySecvices/mySecvices'
+export {default as Portfolio} from './portfolio/portfolio'
+export {default as Footer} from './footer/footer'
